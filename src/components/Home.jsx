@@ -15,8 +15,8 @@ const Home = () =>{
     return(
         <>
             <Canvas frameloop="demand" camera={{ position: [-8,3,5], fov: 45, near: 0.1, far: 200 }}> 
-                <ambientLight intensity={1} />
-                <directionalLight color="white" position={[-8, 2, 3]} />
+                {/* <ambientLight intensity={1} /> */}
+                <directionalLight color="white" position={[5, 5, 10]} />
                 {/* <mesh>
                     <boxGeometry args={[2,2,2]}/>
                     <meshStandardMaterial/>

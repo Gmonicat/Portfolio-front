@@ -4,7 +4,7 @@ import { BufferGeometry } from 'three';
 
 
 const RoomScene = (props) =>{
-    const { scene } = useGLTF('/Realone.glb')
+    const { scene } = useGLTF('/Firstgood2.glb')
     if (scene) {
         scene.traverse((object) => {
           if (object.isMesh) {
