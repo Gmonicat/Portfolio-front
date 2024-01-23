@@ -1,0 +1,51 @@
+.nav_container{
+    display:flex;
+    position:fixed;
+    justify-content: space-between;
+    align-items: center;
+    width:100vw;
+    height:10%;
+    background-color:transparent;
+    -webkit-backdrop-filter:blur(3px);
+    backdrop-filter:blur(3px);
+    box-shadow:
+    0px 0px 150px 10px rgba(255, 255, 255, 0.3), 
+    inset 0px 0px 180px 20px rgba(255,255,255,0.1);
+    z-index:2;
+}
+
+.nav_container::before{
+    content:'';
+    position:absolute;
+    width:60%;
+    margin-left:20%;
+    bottom:0;
+    left:0;
+    height:1px;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1) ,rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1), transparent);    z-index:-1;
+}
+.buttons_container{
+    display:flex;
+    position:absolute;
+    justify-content: space-evenly;
+    align-items:center;
+    right:30px;
+    width:200px;
+}
+.nav_button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:40px;
+    color:white;
+    cursor:pointer;
+    padding:5px;
+    box-sizing: border-box;
+}
+
+.nav_button:hover{
+    color:rgba(255, 255, 255, 0.7);
+
+}
+
