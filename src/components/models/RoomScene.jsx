@@ -5,7 +5,7 @@ import * as THREE from 'three';
 
 
 const RoomScene = (props) =>{
-    const { scene, nodes, materials } = useGLTF('/Prueba3.glb')
+    const { scene, nodes, materials } = useGLTF('/FirstG3.glb')
     
     if (scene) {
       scene.traverse((object) => {
@@ -19,7 +19,7 @@ const RoomScene = (props) =>{
     return (
         <>
             <primitive object={scene}/>
-            <directionalLight color="white" position={[5, 5, 10]} />
+            <ambientLight color="white" position={[0, 0,0]} intensity={0.5}/>
         </> 
         )
 }
